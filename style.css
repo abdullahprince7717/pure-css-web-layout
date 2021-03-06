@@ -19,18 +19,19 @@ body{
 
     font-family: 'Quicksand', sans-serif;
     font-weight: 375;
-    color: white;
+    
+    
 
 }
 
-ul{
+.menu ul{
     display: flex;
     list-style: none;
     flex-direction: row;
     
 }
 
-li{
+.menu li{
 
     
     margin-right: 15px;
@@ -70,6 +71,7 @@ span{
 
     text-align: center;
     background-color: #34495E ;
+    color: white;
     
 }
 
@@ -156,9 +158,37 @@ p{
   .side-content{
 
     display: flex;
+    flex-direction: column;
     float: left;
     width: 25%;
-    background-color: darkgrey;
+    background-color: white;
+    
+    
+
+  }
+
+
+  .side-content img{
+
+    width: 100%
+
+  }
+
+  .side-content  button{
+
+    width:50%;
+    align-self: center;
+    background-color: orange;
+    color: white;
+    padding-top: 5px;
+    justify-self: center;
+
+  }
+
+  .side-prod1,.side-prod2,.side-prod3{
+
+    background-color: lightgrey;
+
   }
 
   .main-content{
@@ -167,4 +197,6 @@ p{
     background-color: darkgrey;
 
   }
+
+
 
