@@ -4,7 +4,15 @@
     color: white;
     padding: 5px;
     clear: left;
+    display: block;
     
+    
+}
+
+.text{
+
+  align-content: center;
+
 }
 
 body{
@@ -118,7 +126,7 @@ p{
     display: flex;
     background-color: #273746 ;
     vertical-align: middle;
-
+    align-items: center;
   }
 
   .search-bar img{
@@ -133,6 +141,30 @@ p{
     padding-bottom: 5px;
     border: 5px;
     height: 25.5px;
+
+  }
+
+  .filters-container{
+
+    height: 80px;
+    background-color: darkgrey;
+    color: black;
+
+  }
+
+
+  .side-content{
+
+    display: flex;
+    float: left;
+    width: 25%;
+    background-color: darkgrey;
+  }
+
+  .main-content{
+
+    width: 75%;
+    background-color: darkgrey;
 
   }
 
