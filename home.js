@@ -7,15 +7,15 @@ var deleteButtonElement;
 
 
 
-function filter() {
-   var waist = document.getElementById("waist-filter");
-   var type = document.getElementById("type-filter");
-   var size = document.getElementById("size-filter");
+// function filter() {
+//    var waist = document.getElementById("waist-filter");
+//    var type = document.getElementById("type-filter");
+//    var size = document.getElementById("size-filter");
 
-   console.log(waist.value);
-   console.log(type.value);
-   console.log(size.value);
-}
+//    console.log(waist.value);
+//    console.log(type.value);
+//    console.log(size.value);
+// }
 
 
 
@@ -28,7 +28,7 @@ function searchbar() {
 
 
 
-function Enter() {
+function enter() {
    console.log("New item will be added soon");
 
    //CREATING LIST ELEMENT and TEXTNODE for INPUT TEXT
@@ -56,22 +56,20 @@ function abc() {
    document.getElementById("demo").innerHTML = "Paragraph changed!";
 }
 
-function search () {
+window.onload = function () {
    var btn = document.getElementById("search-button");
-   btn.onclick = searchbar();
+   btn.onclick = searchbar;
 }
 
-function addList() {
+window.onload = function () {
    var EnterButton = document.getElementById("enter");
-   EnterButton.onclick = Enter();
+   EnterButton.onclick = enter;
 }
 
-window.onload = addList;
 
-window.onload = search;
+console.log("done");
 
-onload = function () {
+window.onload = function () {
    var btn = document.getElementById("demo");
-   btn.onclick = abc();
-
+   btn.onclick = abc;
 }

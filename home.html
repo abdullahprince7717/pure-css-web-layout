@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:300,500">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="home.js"></script>
+    <script src="./home.js"></script>
 </head>
 <body>
 
@@ -42,7 +42,7 @@
 
         <a href="#" class="home-image" > <img src="main-logo.PNG" alt=""></a>
         <input id="search-bar" type="text" placeholder="What are you looking for......">
-        <button id="search-button"  type="submit"> <i class="fa fa-search"></i></button> 
+        <button id="search-button" onclick="searchbar()" type="submit"> <i class="fa fa-search"></i></button> 
         <p id="ptag" style="background-color: blueviolet;" > This text will be changed </p>
 
 
@@ -192,7 +192,7 @@
     <div class="main-content">
 
         <input id="input-text" type="text" >
-         <button id="enter" type="submit">Enter</button>
+         <button id="enter" onclick="enter()" type="submit">Enter</button>
 
         <ul id="unlist">
             <li id="list-item">avfiuie ckabdjklabdjka</li>
@@ -204,7 +204,7 @@
 
     </div>
 
-    <script src="home.js"></script>
+   
     <!-- <script src="jquery-3.6.0.min.js"></script> -->
 
 </body>
