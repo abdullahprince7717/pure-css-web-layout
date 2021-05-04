@@ -189,23 +189,31 @@
     </div>
 
             
-    <div class="main-content">
+    <div id="main-content">
 
         <input id="input-text" type="text" >
          <button id="enter" onclick="enter()" type="submit">Enter</button>
 
         <ul id="unlist">
-            <li id="list-item">avfiuie ckabdjklabdjka</li>
-            <li id="list-item">avfiuie ckabdjklabdjka</li>
-            <li id="list-item">avfiuie ckabdjklabdjka</li>
+            <li class="list-item">avfiuie ckabdjklabdjka <button onclick="deleteListItem(event)" class="delete"> Delete</button></li>
+            <li class="list-item">avfiuie ckabdjklabdjka <button onclick="deleteListItem(event)" class="delete"> Delete</button></li>
+            <li class="list-item">avfiuie ckabdjklabdjka <button onclick="deleteListItem(event)" class="delete"> Delete</button></li>
+
         </ul>
 
-    
+        <!-- NOW CREATING ANOTHER LIST TO PERFORM ABOVE OPERATIONS USING JQUERY -->
+
+        <li id="jlist">
+            <li class="list-item">qwelKAJDBC AKGJFHWO UILFgakc </li>
+            <li class="list-item">qwelKAJDBC AKGJFHWO UILFgakc </li>
+            <li class="list-item">qwelKAJDBC AKGJFHWO UILFgakc </li>
+        </li>
+
 
     </div>
 
    
-    <!-- <script src="jquery-3.6.0.min.js"></script> -->
+    <script src="jquery-3.6.0.min.js"></script>
 
 </body>
 </html>

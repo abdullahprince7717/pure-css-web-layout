@@ -40,17 +40,34 @@ function enter() {
    newListElement.appendChild(newItemTextNode);
    list.appendChild(newListElement);
 
+   // var mainDiv = document.getElementById("main-content");
+   // newItem.innerHTML = "";
+   // mainDiv.appendChild(newItem);
+
+
    //CREATING DELETE ELEMENT FOR DELETE BUTTON
 
    deleteButtonElement = document.createElement("button");
    deleteButtonElement.type = "button";
    deleteButtonElement.innerHTML = "Delete";
-   deleteButtonElement.className = "delete-button";
+   deleteButtonElement.className = "delete";
+
+   //QUESTION? WHY EVENT OBJECT CANT BE PASSED AS AN ARGUMENT TO THIS FUNCTION ??
+
+   // deleteButtonElement.onclick = deleteListItem(event);
+   
    list.appendChild(deleteButtonElement);
 
    console.log("Task done");
 }
 
+function deleteListItem(e) {
+
+   var deleteTag = e.target;
+   var li = deleteTag.parentNode;
+   li.parentNode.removeChild(li);
+
+}
 
 function abc() {
    document.getElementById("demo").innerHTML = "Paragraph changed!";
@@ -73,3 +90,14 @@ window.onload = function () {
    var btn = document.getElementById("demo");
    btn.onclick = abc;
 }
+
+// window.onload = function () {
+
+//    var btn = document.getElementsByClassName("delete");
+//    btn.onclick = deleteListItem(event);
+// }
+
+
+
+// USING JQUERY TO PERFORM ABOVE ACTIONS
+
