@@ -55,7 +55,7 @@ function enter() {
    //QUESTION? WHY EVENT OBJECT CANT BE PASSED AS AN ARGUMENT TO THIS FUNCTION ??
 
    // deleteButtonElement.onclick = deleteListItem(event);
-   
+
    list.appendChild(deleteButtonElement);
 
    console.log("Task done");
@@ -101,3 +101,34 @@ window.onload = function () {
 
 // USING JQUERY TO PERFORM ABOVE ACTIONS
 
+$(function () {
+
+   $("#jbtn").on("click", addList);
+   $(".jdeletebtn").on("click", deleteItem);
+
+
+
+});
+
+function addList(event) {
+
+   console.log("dfsdfs");
+   console.log($(this), this, event);
+
+   $("#jlist").append("<li> New Item <button class = jdeletebtn > Delete </button> </li>");
+}
+
+function deleteItem() {
+
+   console.log(" NOT DONEEEEEEEEEEEEEEEEEE");
+   //$("#jdeletebtn").event.target;
+
+   $(this).closest(".list-item").remove();
+   $(document).on("click", function () {
+      $(this).parent().remove();
+   });
+
+   console.log("DONEEEEEEEEEEEEEEEEEE");
+
+
+}
